@@ -1,0 +1,23 @@
+{
+  "name": "refit-store-server",
+  "version": "0.1.0",
+  "description": "server for refit-store store",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel lib -d dist",
+    "start": "npm run build && nodemon dist/index.js"
+  },
+  "author": "JerakRus",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemod": "^1.5.19"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5",
+    "nodemailer": "^5.1.1"
+  }
+}
